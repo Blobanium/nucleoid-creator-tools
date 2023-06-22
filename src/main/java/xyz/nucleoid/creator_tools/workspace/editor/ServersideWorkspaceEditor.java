@@ -17,7 +17,6 @@ import xyz.nucleoid.creator_tools.workspace.WorkspaceRegion;
 import xyz.nucleoid.creator_tools.workspace.trace.PartialRegion;
 import xyz.nucleoid.creator_tools.workspace.trace.RegionTraceMode;
 import xyz.nucleoid.map_templates.BlockBounds;
-
 import java.util.UUID;
 import java.util.function.Predicate;
 
@@ -44,7 +43,7 @@ public final class ServersideWorkspaceEditor implements WorkspaceEditor {
         this.player = player;
         this.workspace = workspace;
 
-        var markerEntity = new ArmorStandEntity(EntityType.ARMOR_STAND, player.world);
+        var markerEntity = new ArmorStandEntity(EntityType.ARMOR_STAND, player.getWorld());
         markerEntity.setInvisible(true);
         markerEntity.setInvulnerable(true);
         markerEntity.setNoGravity(true);

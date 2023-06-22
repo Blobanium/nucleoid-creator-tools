@@ -22,7 +22,7 @@ public final class DimensionOptionsArgument {
         return CommandManager.argument(name, IdentifierArgumentType.identifier())
                 .suggests((context, builder) -> {
                     var source = context.getSource();
-                    var registryManager = source.getServer().getCombinedDynamicRegistries().getCombinedRegistryManager();;
+                    var registryManager = source.getServer().getCombinedDynamicRegistries().getCombinedRegistryManager();
                     var dimensions = registryManager.get(RegistryKeys.DIMENSION);
 
                     return CommandSource.suggestIdentifiers(
@@ -36,7 +36,7 @@ public final class DimensionOptionsArgument {
         var identifier = IdentifierArgumentType.getIdentifier(context, name);
 
         var source = context.getSource();
-        var registryManager = source.getServer().getCombinedDynamicRegistries().getCombinedRegistryManager();;
+        var registryManager = source.getServer().getCombinedDynamicRegistries().getCombinedRegistryManager();
         var dimensions = registryManager.get(RegistryKeys.DIMENSION);
 
         var dimension = dimensions.get(identifier);

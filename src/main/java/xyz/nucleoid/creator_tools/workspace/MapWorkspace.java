@@ -18,7 +18,6 @@ import net.minecraft.util.math.Vec3d;
 import xyz.nucleoid.fantasy.RuntimeWorldHandle;
 import xyz.nucleoid.map_templates.BlockBounds;
 import xyz.nucleoid.map_templates.MapTemplate;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
